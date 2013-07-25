@@ -26,6 +26,7 @@ module.exports = function (sails) {
 		 */
 
 		this.generateController = function (entity, options) {
+			console.log("**************************** you are in teh generate controller method ****************************************************")
 			var newControllerPath = sails.config.paths.controllers + '/' + utils.capitalize(entity) + 'Controller.js';
 			var newFederatedControllerPath = sails.config.paths.controllers + '/' + entity;
 
