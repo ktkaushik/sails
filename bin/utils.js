@@ -324,6 +324,19 @@ module.exports = function(sails) {
 			return require('underscore.string').capitalize(str);
 		};
 
+		/**
+		 *
+		 *
+		 * @api private
+		 */
+		this.pluralize = function(str) {
+			return str + 's';
+		};
+
+		this.capitalizeAndPluralize = function(str) {
+			return require('underscore.string').capitalize(str) + 's';	
+		};
+
 
 		_.bindAll(this);
 
