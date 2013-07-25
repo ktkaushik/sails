@@ -192,6 +192,7 @@ require('../lib/configuration')(sails).load(function (err) {
       verifyArg(2, 'Please specify the name for the new controller as the third argument.');
 
       // Figure out actions based on args
+      sails.log.info("Generating controller ..")
       var options = _.extend({}, argv);
       options.actions = argv._.splice(3);
 
