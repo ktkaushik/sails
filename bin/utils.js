@@ -333,11 +333,6 @@ module.exports = function(sails) {
 			return str + 's';
 		};
 
-		this.capitalizeAndPluralize = function(str) {
-			return require('underscore.string').capitalize(str) + 's';	
-		};
-
-
 		_.bindAll(this);
 
 	}

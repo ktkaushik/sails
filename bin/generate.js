@@ -26,8 +26,7 @@ module.exports = function (sails) {
 		 */
 
 		this.generateController = function (entity, options) {
-			// var newControllerPath = sails.config.paths.controllers + '/' + utils.capitalize(entity) + 'Controller.js';
-			var newControllerPath = sails.config.paths.controllers + '/' + utils.capitalizeAndPluralize(entity) + 'Controller.js';
+			var newControllerPath = sails.config.paths.controllers + '/' + utils.capitalize(entity) + 'Controller.js';
 			var newFederatedControllerPath = sails.config.paths.controllers + '/' + entity;
 
 			utils.verifyDoesntExist(newControllerPath, "A controller already exists at: " + newControllerPath);
